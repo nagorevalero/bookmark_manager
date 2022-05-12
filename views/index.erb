@@ -1,5 +1,7 @@
 <ul>
   <% @bookmarks.map do |bookmark| %>
-    <li><%= bookmark %></li>
+    <a href="<%= bookmark.url %>"> 
+    <li><%= bookmark.title %></li> 
+    </a>
   <% end %>
 </ul>
